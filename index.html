@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de DNI</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Validador de DNI</h1>
+        <form id="dniForm">
+            <label for="dniNumber">Número de DNI (sin letra):</label>
+            <input type="text" id="dniNumber" name="dniNumber" required maxlength="8" pattern="\d*">
+            
+            <label for="dniLetter">Letra del DNI:</label>
+            <input type="text" id="dniLetter" name="dniLetter" required maxlength="1" pattern="[A-Za-z]">
+            
+            <button type="submit">Validar</button>
+        </form>
+
+        <p id="message" class="hidden"></p>
+    </div>
+
+    <script src="logica.js"></script>
+</body>
+</html>
