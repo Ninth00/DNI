@@ -21,12 +21,6 @@ document.getElementById('dniForm').addEventListener('submit', function (e) {
         );
         return;
     }
-    //Validar que sea un numero entero
-    if(!Number.isInteger(dniNumber)){
-    alert("Solo se permiten numeros enteros.\n" +
-        "Por favor, introduce un número entero en un rango entre 0 y 99999999.")
-        return;
-    }
     //Validar que la letra del DNI no este vacía
     if(dniLetter === ""){
         alert("Por favor ingresa una letra de DNI.")
